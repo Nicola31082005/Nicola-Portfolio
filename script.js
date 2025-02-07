@@ -1,20 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Form Submission Logic
-  const contactForm = document.getElementById("contactForm");
-  if (contactForm) {
-    contactForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-      const name = document.getElementById("name").value;
-      const email = document.getElementById("email").value;
-      const message = document.getElementById("message").value;
-
-      // You can add your logic here (e.g., send data to a server or display a success message)
-      alert(`Thank you, ${name}! Your message has been sent.`);
-    });
-  } else {
-    console.error("Contact form not found!");
-  }
-
   // Toggle School Image Visibility
   const showSchoolImageButton = document.getElementById("showSchoolImage");
   const schoolImage = document.getElementById("schoolImage");
@@ -32,5 +16,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   } else {
     console.error("Button or image element not found!");
+  }
+
+  // Toggle Certificates Visibility
+  const showCertificatesButton = document.getElementById("showCertificates");
+  const certificatesImages = document.getElementById("certificatesImages");
+
+  if (showCertificatesButton && certificatesImages) {
+    showCertificatesButton.addEventListener("click", function () {
+      certificatesImages.classList.toggle("hidden");
+
+      // Change Button Text
+      if (certificatesImages.classList.contains("hidden")) {
+        this.textContent = "Show Certificates";
+      } else {
+        this.textContent = "Hide Certificates";
+      }
+    });
+  } else {
+    console.error("Button or certificates element not found!");
   }
 });
