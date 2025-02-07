@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link href="styles.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100 text-gray-800">
@@ -30,30 +31,82 @@
         <div class="mb-6">
           <h2 class="text-xl font-bold mb-4">Websites & Portfolios</h2>
           <ul>
-            <li><a href="#" class="text-blue-500 hover:underline">LinkedIn</a></li>
-            <li><a href="#" class="text-blue-500 hover:underline">GitHub</a></li>
+            <li class="mb-2">
+              <a href="https://www.linkedin.com/in/nikola-dimitrov-213034349/" class="text-blue-500 hover:text-blue-600">
+                <i class="fab fa-linkedin text-blue-500 mr-2"></i> <!-- LinkedIn icon -->
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Nicola31082005" class="text-blue-500 hover:text-blue-600">
+                <i class="fab fa-github text-blue-500 mr-2"></i> <!-- GitHub icon -->
+                GitHub
+              </a>
+            </li>
           </ul>
         </div>
 
         <!-- Skills -->
         <div class="mb-6">
-          <h2 class="text-xl font-bold mb-4">Skills</h2>
+          <h2 class="text-xl font-bold mb-4">Technical Skills</h2>
           <ul class="list-disc list-inside">
-            <li>Computer Skills</li>
-            <li>Programming Skills</li>
-            <li>JavaScript</li>
-            <li>Social Media</li>
-            <li>Time Management</li>
-            <li>Data Entry</li>
+            <li>
+              <i class="fab fa-js-square text-yellow-400 mr-2"></i> <!-- JavaScript icon -->
+              JavaScript (Vanilla, ES6+)
+            </li>
+            <li>
+              <i class="fab fa-node-js text-green-600 mr-2"></i> <!-- Node.js icon -->
+              Node.js
+            </li>
+            <li>
+              <i class="fas fa-server text-gray-600 mr-2"></i> <!-- Express.js icon -->
+              Express.js
+            </li>
+            <li>
+              <i class="fas fa-database text-blue-500 mr-2"></i> <!-- MongoDB icon -->
+              MongoDB
+            </li>
+            <li>
+              <i class="fab fa-react text-blue-400 mr-2"></i> <!-- React icon -->
+              React
+            </li>
+            <li>
+              <i class="fas fa-paint-brush text-teal-500 mr-2"></i> <!-- Tailwind CSS icon -->
+              Tailwind CSS
+            </li>
+            <li>
+              <i class="fab fa-bootstrap text-purple-600 mr-2"></i> <!-- Bootstrap icon -->
+              Bootstrap
+            </li>
+            <li>
+              <i class="fab fa-html5 text-orange-500 mr-2"></i> <!-- HTML5 icon -->
+              HTML5 & CSS3
+            </li>
+            <li>
+              <i class="fab fa-git-alt text-red-500 mr-2"></i> <!-- Git icon -->
+              Git & Version Control
+            </li>
           </ul>
         </div>
 
         <!-- Languages -->
         <div class="mb-6">
           <h2 class="text-xl font-bold mb-4">Languages</h2>
-          <ul class="list-disc list-inside">
-            <li>English</li>
-            <li>Bulgarian</li>
+          <ul>
+            <!-- Bulgarian -->
+            <li class="mb-2">
+              <span class="font-semibold">Bulgarian:</span>
+              <div class="inline-flex ml-2">
+                <span class="text-yellow-500">★★★★★</span> <!-- Full stars -->
+              </div>
+            </li>
+            <!-- English -->
+            <li>
+              <span class="font-semibold">English:</span>
+              <div class="inline-flex ml-2">
+                <span class="text-yellow-500">★★★★☆</span> <!-- 4 out of 5 stars -->
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -93,7 +146,15 @@
           </div>
           <div>
             <h3 class="text-xl font-semibold">High School Diploma</h3>
-            <p class="text-gray-600">Second English Language School, Sofia (May 2024)</p>
+            <p class="text-gray-600">Second English Language School "Thomas Jefferson", Sofia (May 2024)</p>
+            <!-- Show Button -->
+            <button id="showSchoolImage" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+              Show School Diploma
+            </button>
+            <!-- School Image (Hidden by Default) -->
+            <div id="schoolImage" class="mt-4 hidden">
+              <img src="assets/images/thomas-jefferson-school.jpg" alt="Second English Language School Thomas Jefferson" class="w-48 h-auto rounded-lg shadow-md">
+            </div>
           </div>
         </section>
 
@@ -110,6 +171,6 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="/script.js"></script>
 </body>
 </html>
