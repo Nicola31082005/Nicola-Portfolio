@@ -9,10 +9,22 @@
   <link href="styles.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100 text-gray-800">
+  <!-- Navigation Bar -->
+  <nav class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#" class="text-xl font-bold text-blue-500">My Portfolio</a>
+      <ul class="flex space-x-6">
+        <li><a href="#about" class="text-gray-700 hover:text-blue-500">About</a></li>
+        <li><a href="#projects" class="text-gray-700 hover:text-blue-500">Projects</a></li>
+        <li><a href="#certifications" class="text-gray-700 hover:text-blue-500">Certifications</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <div class="container mx-auto p-4 lg:p-8">
     <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
       <!-- Left Column -->
-      <div class="lg:col-span-1 bg-white p-6 rounded-lg shadow-md">
+      <div class="lg:col-span-1 bg-white p-6 rounded-lg shadow-md self-start">
         <!-- Profile Picture -->
         <div class="text-center">
           <img src="assets/images/profile.jpg" alt="Profile Picture" class="w-32 h-32 rounded-full mx-auto mb-4">
@@ -21,10 +33,10 @@
         <!-- Contact Info -->
         <div class="mb-6">
           <h2 class="text-xl font-bold mb-4">Contact</h2>
-          <p class="text-gray-700"><span class="font-semibold">Address:</span> [Your Address]</p>
-          <p class="text-gray-700"><span class="font-semibold">Phone:</span> [Your Phone]</p>
-          <p class="text-gray-700"><span class="font-semibold">Email:</span> [Your Email]</p>
-          <p class="text-gray-700"><span class="font-semibold">WWW:</span> <a href="#" class="text-blue-500 hover:underline">GitHub Portfolio</a></p>
+          <p class="text-gray-700"><span class="font-semibold">Address:</span> Ilinden 128 vh.V </p>
+          <p class="text-gray-700"><span class="font-semibold">Phone:</span> +359 882 854 729</p>
+          <p class="text-gray-700"><span class="font-semibold">Email:</span> nikola.dimitrov3108@gmail.com</p>
+          <p class="text-gray-700"><span class="font-semibold">GitHub:</span> <a href="https://github.com/Nicola31082005" class="text-blue-500 hover:underline">GitHub Portfolio</a></p>
         </div>
 
         <!-- Websites & Portfolios -->
@@ -114,7 +126,7 @@
       <!-- Right Column -->
       <div class="lg:col-span-3">
         <!-- Professional Summary -->
-        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+        <section id="about" class="bg-white p-6 rounded-lg shadow-md mb-8">
           <h2 class="text-2xl font-bold mb-4">Professional Summary</h2>
           <p class="text-gray-700">
             Dynamic and collaborative professional with experience at Software University, where I honed my programming skills (including JavaScript, Node.JS, Express, React, MongoDB) and developed strong time management abilities. Excelled in creating a positive work environment and leveraging computer skills to streamline document management.
@@ -143,8 +155,6 @@
             <h3 class="text-xl font-semibold">Professional Certificates And Diplomas</h3>
             <p class="text-gray-600">SoftUni Software Engineering, Sofia, Bulgaria (Expected April 2025)</p>
             <p class="text-gray-700">Completed University-level Coursework: JavaScript, SoftUni.</p>
-
-
           </div>
           <div>
             <h3 class="text-xl font-semibold">High School Diploma</h3>
@@ -160,7 +170,7 @@
         </section>
 
         <!-- Certifications -->
-        <section class="bg-white p-6 rounded-lg shadow-md">
+        <section id="certifications" class="bg-white p-6 rounded-lg shadow-md">
           <h2 class="text-2xl font-bold mb-4">Certifications</h2>
           <ul class="list-disc list-inside">
             <li>SoftUni - JS - Programming Fundamentals (May 2024)</li>
@@ -175,6 +185,43 @@
             <img src="assets/images/certificate2.jpg" alt="JS - Programming Fundamentals" class="w-48 h-auto rounded-lg shadow-md">
             <img src="assets/images/certificate1.jpg" alt="JS - Programming Advanced" class="w-48 h-auto rounded-lg shadow-md">
             <img src="assets/images/certificate3.jpg" alt="JS - Programming Applications" class="w-48 h-auto rounded-lg shadow-md">
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="bg-white p-6 rounded-lg shadow-md mt-8">
+          <h2 class="text-2xl font-bold mb-4">Projects</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Project 1 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col">
+              <h3 class="text-xl font-bold mb-2">Task Manager API</h3>
+              <p class="text-gray-700 mb-6">A robust Task Manager API built with Node.js, Express, and MongoDB.</p>
+              <div class="mt-auto">
+                <a href="https://github.com/Nicola31082005/Task-Manager-API" class="text-blue-500 hover:underline">View Project</a>
+                <br>
+                <a href="https://task-manager-api-tau-one.vercel.app/" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Live Demo Test</a>
+              </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col">
+              <h3 class="text-xl font-bold mb-2">Planet Pizza</h3>
+              <p class="text-gray-700 mb-6 ">An online pizza store application built with Express.js, Handlebars, MongoDB, and Firebase Authentication.</p>
+              <div class="mt-auto">
+                <a href="https://github.com/Nicola31082005/Planet-Pizza" class="text-blue-500 hover:underline">View Project</a>
+                <br>
+                <a href="https://planet-pizza-steel.vercel.app/" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Live Demo Test</a>
+              </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col">
+              <h3 class="text-xl font-bold mb-2">Mystery Box SPA</h3>
+              <p class="text-gray-700 mb-6">This project is a sleek single-page application built with modern web technologies, designed for a clean and efficient user experience.</p>
+              <div class="mt-auto">
+                <a href="https://github.com/Nicola31082005/mystery-box" class="text-blue-500 hover:underline">View Project GitHub</a>
+                <br>
+                <a href="https://mystery-box-project.web.app/" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Live Demo Test</a>
+              </div>
+            </div>
           </div>
         </section>
       </div>
