@@ -1,14 +1,14 @@
-document.addEventListener("DOMContentLoaded", function () {
+$(document).ready(function () {
   // Toggle School Image Visibility
   const showSchoolImageButton = document.getElementById("showSchoolImage");
   const schoolImage = document.getElementById("schoolImage");
 
   if (showSchoolImageButton && schoolImage) {
-    showSchoolImageButton.addEventListener("click", function () {
-      schoolImage.classList.toggle("hidden");
+    $(showSchoolImageButton).click(function () {
+      $(schoolImage).toggleClass("hidden");
 
       // Change Button Text
-      if (schoolImage.classList.contains("hidden")) {
+      if ($(schoolImage).hasClass("hidden")) {
         this.textContent = "Show School Diploma";
       } else {
         this.textContent = "Hide School Diploma";
@@ -23,11 +23,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const certificatesImages = document.getElementById("certificatesImages");
 
   if (showCertificatesButton && certificatesImages) {
-    showCertificatesButton.addEventListener("click", function () {
-      certificatesImages.classList.toggle("hidden");
+    $(showCertificatesButton).click(function (e) {
+      $(certificatesImages).toggleClass("hidden");
 
       // Change Button Text
-      if (certificatesImages.classList.contains("hidden")) {
+      if ($(certificatesImages).hasClass("hidden")) {
         this.textContent = "Show Certificates";
       } else {
         this.textContent = "Hide Certificates";
