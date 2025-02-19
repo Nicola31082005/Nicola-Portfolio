@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link href="styles.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
 </head>
+
 <body class="bg-gray-100 text-gray-800">
   <!-- Navigation Bar -->
   <nav class="bg-white shadow-md">
@@ -37,7 +41,8 @@
           <p class="text-gray-700"><span class="font-semibold">Address:</span> Ilinden 128 vh.V </p>
           <p class="text-gray-700"><span class="font-semibold">Phone:</span> +359 882 854 729</p>
           <p class="text-gray-700"><span class="font-semibold">Email:</span> nikola.dimitrov3108@gmail.com</p>
-          <p class="text-gray-700"><span class="font-semibold">GitHub:</span> <a href="https://github.com/Nicola31082005" class="text-blue-500 hover:underline">GitHub Portfolio</a></p>
+          <p class="text-gray-700"><span class="font-semibold">GitHub:</span> <a
+              href="https://github.com/Nicola31082005" class="text-blue-500 hover:underline">GitHub Portfolio</a></p>
         </div>
 
         <!-- Websites & Portfolios -->
@@ -45,7 +50,8 @@
           <h2 class="text-xl font-bold mb-4">Websites & Portfolios</h2>
           <ul>
             <li class="mb-2">
-              <a href="https://www.linkedin.com/in/nikola-dimitrov-213034349/" class="text-blue-500 hover:text-blue-600">
+              <a href="https://www.linkedin.com/in/nikola-dimitrov-213034349/"
+                class="text-blue-500 hover:text-blue-600">
                 <i class="fab fa-linkedin text-blue-500 mr-2"></i> <!-- LinkedIn icon -->
                 LinkedIn
               </a>
@@ -130,7 +136,10 @@
         <section id="about" class="bg-white p-6 rounded-lg shadow-md mb-8">
           <h2 class="text-2xl font-bold mb-4">Professional Summary</h2>
           <p class="text-gray-700">
-            Dynamic and collaborative professional with experience at Software University, where I honed my programming skills (including JavaScript, Node.JS, Express, React, MongoDB) and developed strong time management abilities. Excelled in creating a positive work environment and leveraging computer skills to streamline document management.
+            Dynamic and collaborative professional with experience at Software University, where I honed my programming
+            skills (including JavaScript, Node.JS, Express, React, MongoDB) and developed strong time management
+            abilities. Excelled in creating a positive work environment and leveraging computer skills to streamline
+            document management.
           </p>
         </section>
 
@@ -141,10 +150,12 @@
             <h3 class="text-xl font-semibold">Work Study Student, Software University</h3>
             <p class="text-gray-600">Sofia, Bulgaria (Remote)</p>
             <ul class="list-disc list-inside mt-2">
-              <li>Contributed to a positive work environment by maintaining strong relationships with peers, supervisors, and students.</li>
+              <li>Contributed to a positive work environment by maintaining strong relationships with peers,
+                supervisors, and students.</li>
               <li>Interacted respectfully with others to offer ideas, identify issues, and provide assistance.</li>
               <li>Managed an organized filing system for important documents, ensuring easy access when needed.</li>
-              <li>Developed excellent customer service skills through interactions with diverse populations within the university community.</li>
+              <li>Developed excellent customer service skills through interactions with diverse populations within the
+                university community.</li>
             </ul>
           </div>
         </section>
@@ -165,7 +176,8 @@
             </button>
             <!-- School Image (Hidden by Default) -->
             <div id="schoolImage" class="mt-4 hidden">
-              <img src="assets/images/thomas-jefferson-school.jpg" alt="Second English Language School Thomas Jefferson" class="w-48 h-auto rounded-lg shadow-md">
+              <img src="assets/images/thomas-jefferson-school.jpg" alt="Second English Language School Thomas Jefferson"
+                class="w-48 h-auto rounded-lg shadow-md">
             </div>
           </div>
         </section>
@@ -183,9 +195,12 @@
           </button>
           <!-- Certificates (Hidden by Default) -->
           <div id="certificatesImages" class="mt-4 hidden flex justify-evenly">
-            <img src="assets/images/certificate2.jpg" alt="JS - Programming Fundamentals" class="w-48 h-auto rounded-lg shadow-md">
-            <img src="assets/images/certificate1.jpg" alt="JS - Programming Advanced" class="w-48 h-auto rounded-lg shadow-md">
-            <img src="assets/images/certificate3.jpg" alt="JS - Programming Applications" class="w-48 h-auto rounded-lg shadow-md">
+            <img src="assets/images/certificate2.jpg" alt="JS - Programming Fundamentals"
+              class="w-48 h-auto rounded-lg shadow-md">
+            <img src="assets/images/certificate1.jpg" alt="JS - Programming Advanced"
+              class="w-48 h-auto rounded-lg shadow-md">
+            <img src="assets/images/certificate3.jpg" alt="JS - Programming Applications"
+              class="w-48 h-auto rounded-lg shadow-md">
           </div>
         </section>
 
@@ -198,29 +213,37 @@
               <h3 class="text-xl font-bold mb-2">Task Manager API</h3>
               <p class="text-gray-700 mb-6">A robust Task Manager API built with Node.js, Express, and MongoDB.</p>
               <div class="mt-auto">
-                <a href="https://github.com/Nicola31082005/Task-Manager-API" class="text-blue-500 hover:underline">View Project GitHub</a>
+                <a href="https://github.com/Nicola31082005/Task-Manager-API" class="text-blue-500 hover:underline">View
+                  Project GitHub</a>
                 <br>
-                <a href="https://task-manager-api-tau-one.vercel.app/" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Live Demo Test</a>
+                <a href="https://task-manager-api-tau-one.vercel.app/"
+                  class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Live Demo Test</a>
               </div>
             </div>
             <!-- Project 2 -->
             <div class="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col">
               <h3 class="text-xl font-bold mb-2">Planet Pizza</h3>
-              <p class="text-gray-700 mb-6 ">An online pizza store application built with Express.js, Handlebars, MongoDB, and Firebase Authentication.</p>
+              <p class="text-gray-700 mb-6 ">An online pizza store application built with Express.js, Handlebars,
+                MongoDB, and Firebase Authentication.</p>
               <div class="mt-auto">
-                <a href="https://github.com/Nicola31082005/Planet-Pizza" class="text-blue-500 hover:underline">View Project GitHub</a>
+                <a href="https://github.com/Nicola31082005/Planet-Pizza" class="text-blue-500 hover:underline">View
+                  Project GitHub</a>
                 <br>
-                <a href="https://planet-pizza-steel.vercel.app/" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Live Demo Test</a>
+                <a href="https://planet-pizza-steel.vercel.app/"
+                  class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Live Demo Test</a>
               </div>
             </div>
             <!-- Project 3 -->
             <div class="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col">
               <h3 class="text-xl font-bold mb-2">Mystery Box SPA</h3>
-              <p class="text-gray-700 mb-6">This project is a sleek single-page application built with modern web technologies, designed for a clean and efficient user experience.</p>
+              <p class="text-gray-700 mb-6">This project is a sleek single-page application built with modern web
+                technologies, designed for a clean and efficient user experience.</p>
               <div class="mt-auto">
-                <a href="https://github.com/Nicola31082005/mystery-box" class="text-blue-500 hover:underline">View Project GitHub</a>
+                <a href="https://github.com/Nicola31082005/mystery-box" class="text-blue-500 hover:underline">View
+                  Project GitHub</a>
                 <br>
-                <a href="https://mystery-box-project.web.app/" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Live Demo Test</a>
+                <a href="https://mystery-box-project.web.app/"
+                  class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Live Demo Test</a>
               </div>
             </div>
           </div>
@@ -231,4 +254,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
