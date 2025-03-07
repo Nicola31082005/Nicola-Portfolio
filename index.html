@@ -6,252 +6,261 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link href="styles.css" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="/src/styles.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-800">
+
   <!-- Navigation Bar -->
-  <nav class="bg-white shadow-md">
+  <nav class="shadow-md fixed w-full top-0 z-50 bg-white">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <a href="#" class="text-xl font-bold text-blue-500">My Portfolio</a>
+      <a href="#" class="text-2xl font-bold text-indigo-600 hover:text-indigo-800 transition duration-300">Nicola Dimitrov</a>
       <ul class="flex space-x-6">
-        <li><a href="#about" class="text-gray-700 hover:text-blue-500">About</a></li>
-        <li><a href="#projects" class="text-gray-700 hover:text-blue-500">Projects</a></li>
-        <li><a href="#certifications" class="text-gray-700 hover:text-blue-500">Certifications</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
       </ul>
     </div>
   </nav>
 
-  <div class="container mx-auto p-4 lg:p-8">
-    <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
-      <!-- Left Column -->
-      <div class="lg:col-span-1 bg-white p-6 rounded-lg shadow-md self-start">
-        <!-- Profile Picture -->
-        <div class="text-center">
-          <img src="assets/images/profile.jpg" alt="Profile Picture" class="w-32 h-32 rounded-full mx-auto mb-4">
-        </div>
+  <!-- Main Content -->
+  <main class="main-content pt-16">
+    <div class="container mx-auto py-8">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Left Column -->
+        <div class="lg:col-span-1">
+          <div class="card p-6 rounded-lg shadow-md sticky top-24">
+            <!-- Profile Picture -->
+            <div class="text-center my-6">
+              <img src="/assets/images/profile.jpg" alt="Profile Picture" class="inline-block w-40 h-40 rounded-full border-4 border-indigo-500 shadow-lg">
+            </div>
 
-        <!-- Contact Info -->
-        <div class="mb-6">
-          <h2 class="text-xl font-bold mb-4">Contact</h2>
-          <p class="text-gray-700"><span class="font-semibold">Name:</span> Nicola Ivov Dimitrov </p>
-          <p class="text-gray-700"><span class="font-semibold">Address:</span> Ilinden 128 vh.V </p>
-          <p class="text-gray-700"><span class="font-semibold">Phone:</span> +359 882 854 729</p>
-          <p class="text-gray-700"><span class="font-semibold">Email:</span> nikola.dimitrov3108@gmail.com</p>
-          <p class="text-gray-700"><span class="font-semibold">GitHub:</span> <a
-              href="https://github.com/Nicola31082005" class="text-blue-500 hover:underline">GitHub Portfolio</a></p>
-        </div>
-
-        <!-- Websites & Portfolios -->
-        <div class="mb-6">
-          <h2 class="text-xl font-bold mb-4">Websites & Portfolios</h2>
-          <ul>
-            <li class="mb-2">
-              <a href="https://www.linkedin.com/in/nikola-dimitrov-213034349/"
-                class="text-blue-500 hover:text-blue-600">
-                <i class="fab fa-linkedin text-blue-500 mr-2"></i> <!-- LinkedIn icon -->
-                LinkedIn
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/Nicola31082005" class="text-blue-500 hover:text-blue-600">
-                <i class="fab fa-github text-blue-500 mr-2"></i> <!-- GitHub icon -->
-                GitHub
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Skills -->
-        <div class="mb-6">
-          <h2 class="text-xl font-bold mb-4">Technical Skills</h2>
-          <ul class="list-disc list-inside">
-            <li>
-              <i class="fab fa-js-square text-yellow-400 mr-2"></i> <!-- JavaScript icon -->
-              JavaScript (Vanilla, ES6+)
-            </li>
-            <li>
-              <i class="fab fa-node-js text-green-600 mr-2"></i> <!-- Node.js icon -->
-              Node.js
-            </li>
-            <li>
-              <i class="fas fa-server text-gray-600 mr-2"></i> <!-- Express.js icon -->
-              Express.js
-            </li>
-            <li>
-              <i class="fas fa-database text-blue-500 mr-2"></i> <!-- MongoDB icon -->
-              MongoDB
-            </li>
-            <li>
-              <i class="fab fa-react text-blue-400 mr-2"></i> <!-- React icon -->
-              React
-            </li>
-            <li>
-              <i class="fas fa-paint-brush text-teal-500 mr-2"></i> <!-- Tailwind CSS icon -->
-              Tailwind CSS
-            </li>
-            <li>
-              <i class="fab fa-bootstrap text-purple-600 mr-2"></i> <!-- Bootstrap icon -->
-              Bootstrap
-            </li>
-            <li>
-              <i class="fab fa-html5 text-orange-500 mr-2"></i> <!-- HTML5 icon -->
-              HTML5 & CSS3
-            </li>
-            <li>
-              <i class="fab fa-git-alt text-red-500 mr-2"></i> <!-- Git icon -->
-              Git & Version Control
-            </li>
-          </ul>
-        </div>
-
-        <!-- Languages -->
-        <div class="mb-6">
-          <h2 class="text-xl font-bold mb-4">Languages</h2>
-          <ul>
-            <!-- Bulgarian -->
-            <li class="mb-2">
-              <span class="font-semibold">Bulgarian:</span>
-              <div class="inline-flex ml-2">
-                <span class="text-yellow-500">★★★★★</span> <!-- Full stars -->
+            <!-- Contact Info -->
+            <div class="contact-section mb-6">
+              <div class="contact-card">
+                <div class="contact-header">
+                  <i class="fas fa-address-card text-2xl text-indigo-500"></i>
+                  <h2 class="text-xl font-bold">Contact</h2>
+                </div>
+                <div class="contact-content">
+                  <div class="contact-item">
+                    <i class="fas fa-user"></i>
+                    <span class="text-sm">Nicola Ivov Dimitrov</span>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="text-sm">Ilinden 128 vh.V</span>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span class="text-sm">+359 882 854 729</span>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span class="text-sm">nikola.dimitrov3108@gmail.com</span>
+                  </div>
+                </div>
               </div>
-            </li>
-            <!-- English -->
-            <li>
-              <span class="font-semibold">English:</span>
-              <div class="inline-flex ml-2">
-                <span class="text-yellow-500">★★★★☆</span> <!-- 4 out of 5 stars -->
+
+              <!-- Social Links -->
+              <div class="social-links mt-4">
+                <a href="https://www.linkedin.com/in/nikola-dimitrov-213034349/" class="social-link linkedin">
+                  <i class="fab fa-linkedin"></i>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/Nicola31082005" class="social-link github">
+                  <i class="fab fa-github"></i>
+                  <span>GitHub</span>
+                </a>
               </div>
-            </li>
-          </ul>
+
+              <!-- Skills -->
+              <div class="skills-section mt-4">
+                <div class="skills-header">
+                  <i class="fas fa-code text-2xl text-indigo-500"></i>
+                  <h2 class="text-xl font-bold">Skills</h2>
+                </div>
+                <div class="skills-grid">
+                  <div class="skill-item">
+                    <i class="fab fa-js-square"></i>
+                    <span class="text-sm">JavaScript</span>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fab fa-node-js"></i>
+                    <span class="text-sm">Node.js</span>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fas fa-server"></i>
+                    <span class="text-sm">Express.js</span>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <span class="text-sm">MongoDB</span>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fab fa-react"></i>
+                    <span class="text-sm">React</span>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fas fa-paint-brush"></i>
+                    <span class="text-sm">Tailwind CSS</span>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fab fa-bootstrap"></i>
+                    <span class="text-sm">Bootstrap</span>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fab fa-html5"></i>
+                    <span class="text-sm">HTML5 & CSS3</span>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fab fa-git-alt"></i>
+                    <span class="text-sm">Git</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <!-- Right Column -->
-      <div class="lg:col-span-3">
-        <!-- Professional Summary -->
-        <section id="about" class="bg-white p-6 rounded-lg shadow-md mb-8">
-          <h2 class="text-2xl font-bold mb-4">Professional Summary</h2>
-          <p class="text-gray-700">
-            Dynamic and collaborative professional with experience at Software University, where I honed my programming
-            skills (including JavaScript, Node.JS, Express, React, MongoDB) and developed strong time management
-            abilities. Excelled in creating a positive work environment and leveraging computer skills to streamline
-            document management.
-          </p>
-        </section>
+        <!-- Right Column -->
+        <div class="lg:col-span-2">
+          <!-- Professional Summary -->
+          <section id="about" class="card p-6 rounded-lg shadow-md mb-8" data-aos="fade-up">
+            <h2 class="text-2xl font-bold mb-4 section-header">Professional Summary</h2>
+            <p class="text-gray-700">
+              Dynamic and collaborative professional with experience at Software University, where I honed my programming
+              skills (including JavaScript, Node.JS, Express, React, MongoDB) and developed strong time management
+              abilities. Excelled in creating a positive work environment and leveraging computer skills to streamline
+              document management.
+            </p>
+          </section>
 
-        <!-- Professional Experience -->
-        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
-          <h2 class="text-2xl font-bold mb-4">Professional Experience</h2>
-          <div>
-            <h3 class="text-xl font-semibold">Work Study Student, Software University</h3>
-            <p class="text-gray-600">Sofia, Bulgaria (Remote)</p>
-            <ul class="list-disc list-inside mt-2">
-              <li>Contributed to a positive work environment by maintaining strong relationships with peers,
-                supervisors, and students.</li>
-              <li>Interacted respectfully with others to offer ideas, identify issues, and provide assistance.</li>
-              <li>Managed an organized filing system for important documents, ensuring easy access when needed.</li>
-              <li>Developed excellent customer service skills through interactions with diverse populations within the
-                university community.</li>
+          <!-- Professional Experience -->
+          <section class="card p-6 rounded-lg shadow-md mb-8" data-aos="fade-up">
+            <h2 class="text-2xl font-bold mb-4 section-header">Professional Experience</h2>
+            <div>
+              <h3 class="text-xl font-semibold">Work Study Student, Software University</h3>
+              <p class="text-gray-600">Sofia, Bulgaria (Remote)</p>
+              <ul class="list-disc list-inside mt-2 space-y-2">
+                <li>Contributed to a positive work environment by maintaining strong relationships with peers,
+                  supervisors, and students.</li>
+                <li>Interacted respectfully with others to offer ideas, identify issues, and provide assistance.</li>
+                <li>Managed an organized filing system for important documents, ensuring easy access when needed.</li>
+                <li>Developed excellent customer service skills through interactions with diverse populations within the
+                  university community.</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Education Summary -->
+          <section class="card p-6 rounded-lg shadow-md mb-8" data-aos="fade-up">
+            <h2 class="text-2xl font-bold mb-4 section-header">Education Summary</h2>
+            <div class="mb-4">
+              <h3 class="text-xl font-semibold">Professional Certificates And Diplomas</h3>
+              <p class="text-gray-600">SoftUni Software Engineering, Sofia, Bulgaria (Expected April 2025)</p>
+              <p class="text-gray-700">Completed University-level Coursework: JavaScript, SoftUni.</p>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold">High School Diploma</h3>
+              <p class="text-gray-600">Second English Language School "Thomas Jefferson", Sofia (May 2024)</p>
+              <button id="showSchoolImage" class="btn mt-4">
+                <i class="fas fa-graduation-cap mr-2"></i>
+                Show School Diploma
+              </button>
+              <!-- School Image (Hidden by Default) -->
+              <div id="schoolImage" class="mt-4 hidden">
+                <img src="assets/images/thomas-jefferson-school.jpg" alt="Second English Language School Thomas Jefferson"
+                  class="w-48 h-auto rounded-lg shadow-md">
+              </div>
+            </div>
+          </section>
+
+          <!-- Certifications -->
+          <section id="certifications" class="card p-6 rounded-lg shadow-md" data-aos="fade-up">
+            <h2 class="text-2xl font-bold mb-4 section-header">Certifications</h2>
+            <ul class="list-disc list-inside space-y-2">
+              <li>SoftUni - JS - Programming Fundamentals (May 2024)</li>
+              <li>SoftUni - JS - Programming Advanced (Sep 2024)</li>
+              <li>SoftUni - JS - Programming Applications (Oct 2024)</li>
             </ul>
-          </div>
-        </section>
-
-        <!-- Education Summary -->
-        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
-          <h2 class="text-2xl font-bold mb-4">Education Summary</h2>
-          <div class="mb-4">
-            <h3 class="text-xl font-semibold">Professional Certificates And Diplomas</h3>
-            <p class="text-gray-600">SoftUni Software Engineering, Sofia, Bulgaria (Expected April 2025)</p>
-            <p class="text-gray-700">Completed University-level Coursework: JavaScript, SoftUni.</p>
-          </div>
-          <div>
-            <h3 class="text-xl font-semibold">High School Diploma</h3>
-            <p class="text-gray-600">Second English Language School "Thomas Jefferson", Sofia (May 2024)</p>
-            <button id="showSchoolImage" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
-              Show School Diploma
+            <button id="showCertificates" class="btn mt-4">
+              <i class="fas fa-certificate mr-2"></i>
+              Show Certificates
             </button>
-            <!-- School Image (Hidden by Default) -->
-            <div id="schoolImage" class="mt-4 hidden">
-              <img src="assets/images/thomas-jefferson-school.jpg" alt="Second English Language School Thomas Jefferson"
-                class="w-48 h-auto rounded-lg shadow-md">
+            <!-- Certificates (Hidden by Default) -->
+            <div id="certificatesImages" class="mt-4 hidden grid grid-cols-1 md:grid-cols-3 gap-4">
+              <img src="assets/images/certificate2.jpg" alt="JS - Programming Fundamentals"
+                class="w-full h-auto rounded-lg shadow-md">
+              <img src="assets/images/certificate1.jpg" alt="JS - Programming Advanced"
+                class="w-full h-auto rounded-lg shadow-md">
+              <img src="assets/images/certificate3.jpg" alt="JS - Programming Applications"
+                class="w-full h-auto rounded-lg shadow-md">
             </div>
-          </div>
-        </section>
+          </section>
 
-        <!-- Certifications -->
-        <section id="certifications" class="bg-white p-6 rounded-lg shadow-md">
-          <h2 class="text-2xl font-bold mb-4">Certifications</h2>
-          <ul class="list-disc list-inside">
-            <li>SoftUni - JS - Programming Fundamentals (May 2024)</li>
-            <li>SoftUni - JS - Programming Advanced (Sep 2024)</li>
-            <li>SoftUni - JS - Programming Applications (Oct 2024)</li>
-          </ul>
-          <button id="showCertificates" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
-            Show Certificates
-          </button>
-          <!-- Certificates (Hidden by Default) -->
-          <div id="certificatesImages" class="mt-4 hidden flex justify-evenly">
-            <img src="assets/images/certificate2.jpg" alt="JS - Programming Fundamentals"
-              class="w-48 h-auto rounded-lg shadow-md">
-            <img src="assets/images/certificate1.jpg" alt="JS - Programming Advanced"
-              class="w-48 h-auto rounded-lg shadow-md">
-            <img src="assets/images/certificate3.jpg" alt="JS - Programming Applications"
-              class="w-48 h-auto rounded-lg shadow-md">
-          </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="bg-white p-6 rounded-lg shadow-md mt-8">
-          <h2 class="text-2xl font-bold mb-4">Projects</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Project 1 -->
-            <div class="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col">
-              <h3 class="text-xl font-bold mb-2">Sticker Mania</h3>
-              <p class="text-gray-700 mb-6">Sticker-Mania is a full-stack web application that allows users to design
-                custom stickers, customize them, and place orders for delivery.</p>
-              <div class="mt-auto">
-                <a href="https://github.com/Nicola31082005/Sticker-Mania" class="text-blue-500 hover:underline">View
-                  Project GitHub</a>
-                <br>
-                <a href="https://sticker-project-chi.vercel.app/"
-                  class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Live Demo Test</a>
+          <!-- Projects Section -->
+          <section id="projects" class="card p-6 rounded-lg shadow-md mt-8" data-aos="fade-up">
+            <h2 class="text-2xl font-bold mb-4 section-header">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- Project 1 -->
+              <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-xl font-bold mb-2">Sticker Mania</h3>
+                <p class="text-gray-700 mb-6">Sticker-Mania is a full-stack web application that allows users to design
+                  custom stickers, customize them, and place orders for delivery.</p>
+                <div class="mt-auto space-y-2">
+                  <a href="https://github.com/Nicola31082005/Sticker-Mania" class="btn w-full text-center">
+                    <i class="fab fa-github mr-2"></i>
+                    View on GitHub
+                  </a>
+                  <a href="https://sticker-project-chi.vercel.app/" class="btn w-full text-center bg-green-500 hover:bg-green-600">
+                    <i class="fas fa-external-link-alt mr-2"></i>
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+              <!-- Project 2 -->
+              <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-xl font-bold mb-2">Planet Pizza</h3>
+                <p class="text-gray-700 mb-6">An online pizza store application built with Express.js, Handlebars,
+                  MongoDB, and Firebase Authentication.</p>
+                <div class="mt-auto space-y-2">
+                  <a href="https://github.com/Nicola31082005/Planet-Pizza" class="btn w-full text-center">
+                    <i class="fab fa-github mr-2"></i>
+                    View on GitHub
+                  </a>
+                  <a href="https://planet-pizza-steel.vercel.app/" class="btn w-full text-center bg-green-500 hover:bg-green-600">
+                    <i class="fas fa-external-link-alt mr-2"></i>
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+              <!-- Project 3 -->
+              <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="text-xl font-bold mb-2">Mystery Box SPA</h3>
+                <p class="text-gray-700 mb-6">This project is a sleek single-page application built with modern web
+                  technologies, designed for a clean and efficient user experience.</p>
+                <div class="mt-auto space-y-2">
+                  <a href="https://github.com/Nicola31082005/mystery-box" class="btn w-full text-center">
+                    <i class="fab fa-github mr-2"></i>
+                    View on GitHub
+                  </a>
+                  <a href="https://mystery-box-project.web.app/" class="btn w-full text-center bg-green-500 hover:bg-green-600">
+                    <i class="fas fa-external-link-alt mr-2"></i>
+                    Live Demo
+                  </a>
+                </div>
               </div>
             </div>
-            <!-- Project 2 -->
-            <div class="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col">
-              <h3 class="text-xl font-bold mb-2">Planet Pizza</h3>
-              <p class="text-gray-700 mb-6 ">An online pizza store application built with Express.js, Handlebars,
-                MongoDB, and Firebase Authentication.</p>
-              <div class="mt-auto">
-                <a href="https://github.com/Nicola31082005/Planet-Pizza" class="text-blue-500 hover:underline">View
-                  Project GitHub</a>
-                <br>
-                <a href="https://planet-pizza-steel.vercel.app/"
-                  class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Live Demo Test</a>
-              </div>
-            </div>
-            <!-- Project 3 -->
-            <div class="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col">
-              <h3 class="text-xl font-bold mb-2">Mystery Box SPA</h3>
-              <p class="text-gray-700 mb-6">This project is a sleek single-page application built with modern web
-                technologies, designed for a clean and efficient user experience.</p>
-              <div class="mt-auto">
-                <a href="https://github.com/Nicola31082005/mystery-box" class="text-blue-500 hover:underline">View
-                  Project GitHub</a>
-                <br>
-                <a href="https://mystery-box-project.web.app/"
-                  class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Live Demo Test</a>
-              </div>
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
     </div>
-  </div>
+  </main>
 
   <script src="script.js"></script>
 </body>
